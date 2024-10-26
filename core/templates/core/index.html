@@ -1,0 +1,109 @@
+{% extends "core/base.html" %}
+<!-- cargar archivos estaticos -->
+ {% load static %}
+
+
+        <!--Swiper-->
+        {% block swiper %}
+        <div class="swiper-container swiper-slider" data-loop="false" data-autoplay="5500" data-dragable="false">
+          <div class="swiper-wrapper text-center">
+            <div class="swiper-slide" data-slide-bg="{% static 'core/images/soccer.jpg' %}" data-preview-bg="images/background-01-1920x750.jpg">
+              <div class="swiper-caption swiper-parallax" data-speed="0.5" data-fade="true">
+                <div class="swiper-slide-caption">
+                  <div class="container">
+                    <div class="row justify-content-xl-center">
+                      <div class="col-xl-12">
+                        <div class="text-extra-big font-weight-bold font-italic text-uppercase" data-caption-animate="fadeInUp" data-caption-delay="300">Arma tus equipos</div>
+                      </div>
+                      <div class="col-xl-8 offset-top-10">
+                        <h5 class="hidden d-sm-block text-light" data-caption-animate="fadeInUp" data-caption-delay="500">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                          Morbi vitae magna leo. Mauris varius nisl sed sem lobortis, vel maximus ligula tristique.
+                        </h5>
+                        <div class="offset-top-20 offset-sm-top-50"><a class="btn btn-danger btn-anis-effect" href="#" data-waypoint-to="#welcome" data-caption-animate="fadeInUp" data-caption-delay="800"><span class="btn-text">Comencémos</span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-slide-bg="{% static 'core/images/volley.jpg' %}" data-preview-bg="images/background-02-1920x750.jpg">
+              <div class="swiper-caption swiper-parallax" data-speed="0.5" data-fade="true">
+                <div class="swiper-slide-caption">
+                  <div class="container">
+                    <div class="row justify-content-xl-center">
+                      <div class="col-xl-12">
+                        <div class="text-extra-big font-weight-bold font-italic text-uppercase" data-caption-animate="fadeInUp" data-caption-delay="300">Compite con tus amigos</div>
+                      </div>
+                      <div class="col-xl-8 offset-top-10">
+                        <h5 class="hidden d-sm-block text-light" data-caption-animate="fadeInUp" data-caption-delay="500">Nam suscipit erat semper, tempus nunc sit amet, blandit arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</h5>
+                        <div class="offset-top-20 offset-sm-top-50"><a class="btn btn-danger btn-anis-effect" href="#" data-waypoint-to="#welcome" data-caption-animate="fadeInUp" data-caption-delay="800"><span class="btn-text">Comencémos</span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-slide-bg="{% static 'core/images/basket.jpg' %}" data-preview-bg="images/background-03-1920x750.jpg">
+              <div class="swiper-caption swiper-parallax" data-speed="0.5" data-fade="true">
+                <div class="swiper-slide-caption">
+                  <div class="container">
+                    <div class="row justify-content-xl-center">
+                      <div class="col-xl-12">
+                        <div class="text-extra-big font-weight-bold font-italic text-uppercase" data-caption-animate="fadeInUp" data-caption-delay="300">Enterate de tu progreso</div>
+                      </div>
+                      <div class="col-xl-8 offset-top-10">
+                        <h5 class="hidden d-sm-block text-light" data-caption-animate="fadeInUp" data-caption-delay="500">Vivamus consequat nibh eget ligula porta condimentum. Nullam mollis mi in sapien facilisis varius. Donec viverra orci in enim lobortis commodo.</h5>
+                        <div class="offset-top-20 offset-sm-top-50"><a class="btn btn-danger btn-anis-effect" href="#" data-waypoint-to="#welcome" data-caption-animate="fadeInUp" data-caption-delay="800"><span class="btn-text">Comencémos</span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button swiper-button-prev swiper-parallax mdi mdi-chevron-left"></div>
+          <div class="swiper-button swiper-button-next swiper-parallax mdi mdi-chevron-right"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </header>
+      {% endblock swiper %}
+
+
+      <!-- Contenido -->
+      {% block content %}
+      <section class="section-98 section-md-110 novi-background" data-preset='{"title":"Content block 1","category":"content","id":"content-block-1"}'>
+        <div class="container">
+          <h1>Bienvenidos</h1>
+          <hr class="divider bg-red">
+          <div class="row justify-content-sm-center offset-top-66">
+            <div class="col-xl-8">
+              <p>Pellentesque auctor arcu viverra purus porttitor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus viverra aliquet.</p>
+            </div>
+          </div>
+          <div class="row justify-content-center grid-group-lg offset-top-98">
+            <div class="col-md-8 col-lg-4">
+              <!-- Icon Box Type 5-->
+              <div class="box-icon box-icon-bordered"><span class="novi-icon icon icon-outlined icon-sm icon-dark-filled mdi mdi-account-multiple"></span>
+                <h4 class="text-danger offset-top-20">Multiples deportes</h4>
+                <p>Aenean pretium dignissim turpis nec porta. Phasellus quis lacinia metus.</p>
+              </div>
+            </div>
+            <div class="col-md-8 col-lg-4">
+              <!-- Icon Box Type 5-->
+              <div class="box-icon box-icon-bordered"><span class="novi-icon icon icon-outlined icon-xs icon-dark-filled mdi mdi-thumb-up"></span>
+                <h4 class="text-danger offset-top-20">Organizadores y Jugadores</h4>
+                <p>Cras lectus massa, hendrerit vel ante sed, viverra condimentum lectus.</p>
+              </div>
+            </div>
+            <div class="col-md-8 col-lg-4">
+              <!-- Icon Box Type 5-->
+              <div class="box-icon box-icon-bordered"><span class="novi-icon icon icon-outlined icon-sm icon-dark-filled mdi mdi-dumbbell"></span>
+                <h4 class="text-danger offset-top-20">Encuentros aleatorios</h4>
+                <p>Sed est nulla, commodo vitae elementum in, gravida ac tellus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {% endblock content %}
